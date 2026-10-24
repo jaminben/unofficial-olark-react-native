@@ -10,8 +10,9 @@ here so the repository is not empty in the meantime.
 
 Visitor-side SDKs for [Olark](https://www.olark.com) live chat: a headless TypeScript client, a React Native
 hook with a drop-in `OlarkChatView`, and a native Swift package (`OlarkLiveChat` + SwiftUI `OlarkLiveChatUI`).
-Messages to and from agents, typing indicators, agent presence, prechat and offline forms, visitor details,
-background refresh with local notifications, and accessibility that follows the web chatbox's model.
+Messages to and from agents, typing indicators, agent presence, prechat forms that follow the site's survey (full
+screen or inline), visitors your app already knows (name, email and custom fields passed in, no prechat), offline
+messages, background refresh with local notifications, and accessibility that follows the web chatbox's model.
 
 | Package | What | Status |
 |---|---|---|
@@ -21,18 +22,19 @@ background refresh with local notifications, and accessibility that follows the 
 | `olark-ai` / Swift `OlarkAI` | Olark AI SDK | placeholder |
 
 <p align="center">
-  <img src="docs/screenshots/rn-settings.png" width="200" alt="Expo example: settings screen with the site id field and the mock-server toggle" />
-  <img src="docs/screenshots/rn-prechat.png" width="200" alt="Expo example: chat connected to the mock site, prechat form asking for name and email" />
-  <img src="docs/screenshots/rn-conversation.png" width="200" alt="Expo example: an operator message from Avery with the typing indicator and the prechat form" />
+  <img src="docs/screenshots/rn-settings.png" width="200" alt="Expo example: settings screen with the demo site selected and the visitor identified by name, email and custom fields" />
+  <img src="docs/screenshots/rn-prechat.png" width="200" alt="Expo example: full-screen prechat survey asking for name, email, phone and the question" />
+  <img src="docs/screenshots/rn-conversation.png" width="200" alt="Expo example: a conversation with a known visitor, Ada Lovelace, and the operator Avery typing" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/swift-settings.png" width="200" alt="Swift example: settings screen with the site id field and the mock-server toggle" />
-  <img src="docs/screenshots/swift-prechat.png" width="200" alt="Swift example: chat connected to the mock site, prechat form asking for name and email" />
-  <img src="docs/screenshots/swift-conversation.png" width="200" alt="Swift example: an operator message from Avery with the typing indicator" />
+  <img src="docs/screenshots/swift-settings.png" width="200" alt="Swift example: settings screen with the demo site selected and the visitor identified by name, email and custom fields" />
+  <img src="docs/screenshots/swift-prechat.png" width="200" alt="Swift example: full-screen prechat survey asking for name, email, phone and the question" />
+  <img src="docs/screenshots/swift-conversation.png" width="200" alt="Swift example: a conversation with a known visitor, Ada Lovelace, and the operator Avery typing" />
 </p>
 
-*Top: the React Native (Expo) example; bottom: the SwiftUI example. Both against the bundled mock server.*
+*Top: the React Native (Expo) example; bottom: the SwiftUI example. Both against the bundled mock server's demo site:
+settings with an identified visitor, the full-screen prechat survey an anonymous visitor sees, and a conversation.*
 
 ## Disclaimer
 
